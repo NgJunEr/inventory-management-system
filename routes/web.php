@@ -2,8 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PurchaseRequisitionController;
 
-
+Route::resource('purchase-requisitions', PurchaseRequisitionController::class);
 Route::get('/', function () {
     return view('welcome');
 });
